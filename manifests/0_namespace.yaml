@@ -3,5 +3,8 @@ kind: Namespace
 metadata:
   creationTimestamp: null
   name: dev
+  labels:
+    pod-security.kubernetes.io/enforce: baseline
+
 spec: {}
 status: {}
