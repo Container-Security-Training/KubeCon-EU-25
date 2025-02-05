@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: read-log-file
+  name: read-log-file
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: read-log-file
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: read-log-file
+    spec:
+      containers:
+      - image: ctrsec/tools
+        name: tools
+        resources: {}
+        command: ["/bin/bash", "-c"]
+        args: ["while true; do cat /var/log/applogs.txt; sleep 30; done"]
+        volumeMounts:
+        - mountPath: /var/log/applogs.txt
+          name: logfile
+      volumes:
+      - name: logfile
+        hostPath:
+          path: /var/log/applogs.txt
+          type: FileOrCreate
+status: {}
