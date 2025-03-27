@@ -4,7 +4,7 @@ This is the repository where we're keeping all the files needed for the Kubecon 
 
 ## Pre-Requisites
 
-You'll need [kind](https://kind.sigs.k8s.io/) installed, which requires Docker.
+You'll need [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) installed, which requires Docker but should work on Windows, MacOS, or Linux.
 
 ## Setup Information
 
