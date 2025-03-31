@@ -7,7 +7,7 @@ This is the repository where we're keeping all the files needed for the Kubecon 
 - `kubecon-eu-25-slides.pdf` - PDF of our slides for the tutorial
 - `Commands/tutorial-commands.md` - This is all of the commands that we'll use in the tutorial
 - `manifests` - These are all the manifests that we'll deploy in the main scenario
-- `CVE-2020-8554` - This directory contains files for the bonus scenario we'll have a look at it we get time.
+- `CVE-2020-8554` - This directory contains files for the bonus scenario we'll have a look at it we get time
 
 
 ## Pre-Requisites
